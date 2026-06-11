@@ -4,9 +4,8 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
-import { argv } from 'node:process';
-
 import { parseArgs } from 'node:util';
+
 const args = process.argv.slice(2);
 const options = {
   port: {
@@ -21,7 +20,6 @@ const options = {
   },
 };
 const { values } = parseArgs({ args, options });
-
 const MIME_TYPES = {
   '.css': 'text/css; charset=utf-8',
   '.html': 'text/html; charset=utf-8',

@@ -1,0 +1,20 @@
+{
+  "name": "simple-node-server",
+  "version": "1.0.0",
+  "description": "A very simple node-based web server for development purposes, not production",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js -p 5432 -f client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TracyGJG/simple-node-server.git"
+  },
+  "author": "TGJ Gilmore <tracyg.gilmore+npm@gmail.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/TracyGJG/simple-node-server/issues"
+  },
+  "homepage": "https://github.com/TracyGJG/simple-node-server#readme"
+}

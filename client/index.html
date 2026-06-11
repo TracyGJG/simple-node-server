@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@/": "http://localhost:3457/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="$header"></h1>
+    <img src="basic-star.svg" alt="Basic Star using SVG" />
+
+    <script type="module">
+      import hi from './script.js';
+
+      $header.textContent = hi();
+    </script>
+  </body>
+</html>
